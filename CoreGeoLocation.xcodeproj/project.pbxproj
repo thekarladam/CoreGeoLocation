@@ -56,9 +56,6 @@
 		CB911716105C6E7900EDA68B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB911715105C6E7900EDA68B /* main.m */; };
 		CB911871105C955000EDA68B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB911870105C955000EDA68B /* libxml2.dylib */; };
 		CB911874105C95AD00EDA68B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB911870105C955000EDA68B /* libxml2.dylib */; };
-		CB9DBAFB105C508900EA2DF5 /* CGLGeocoder.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9DBAF9105C508900EA2DF5 /* CGLGeocoder.h */; };
-		CB9DBAFC105C508900EA2DF5 /* CGLGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DBAFA105C508900EA2DF5 /* CGLGeocoder.m */; };
-		CB9DBB05105C50B100EA2DF5 /* CGLGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DBAFA105C508900EA2DF5 /* CGLGeocoder.m */; };
 		CB9DBB0F105C514900EA2DF5 /* CGLGeoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9DBB0D105C514900EA2DF5 /* CGLGeoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB9DBB10105C514900EA2DF5 /* CGLGeoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9DBB0E105C514900EA2DF5 /* CGLGeoManager.m */; };
 		CB9DBB11105C514900EA2DF5 /* CGLGeoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9DBB0D105C514900EA2DF5 /* CGLGeoManager.h */; };
@@ -75,14 +72,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CB9116D6105C6A8D00EDA68B /* CGLTestApp */;
+			remoteGlobalIDString = CB9116D6105C6A8D00EDA68B;
 			remoteInfo = CGLTestApp;
 		};
 		CB911705105C6D5000EDA68B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216 /* CoreGeoLocation */;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = CoreGeoLocation;
 		};
 		CB9DBB23105C51AD00EA2DF5 /* PBXContainerItemProxy */ = {
@@ -121,7 +118,7 @@
 		CB911680105C5EAD00EDA68B /* CGLURLRequestLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLURLRequestLoader.m; sourceTree = "<group>"; };
 		CB911695105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLResponse+CGLEncodingAdditions.h"; sourceTree = "<group>"; };
 		CB911696105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLResponse+CGLEncodingAdditions.m"; sourceTree = "<group>"; };
-		CB9116D7105C6A8D00EDA68B /* CGLTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CGLTestApp.app; path = build/Debug/CGLTestApp.app; sourceTree = "<group>"; };
+		CB9116D7105C6A8D00EDA68B /* CGLTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGLTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9116D9105C6A8D00EDA68B /* CGLTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "CGLTestApp-Info.plist"; path = "../../CGLTestApp-Info.plist"; sourceTree = "<group>"; };
 		CB9116F3105C6AF500EDA68B /* CGLTestAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLTestAppController.h; sourceTree = "<group>"; };
 		CB9116F4105C6AF500EDA68B /* CGLTestAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLTestAppController.m; sourceTree = "<group>"; };
@@ -130,8 +127,6 @@
 		CB911715105C6E7900EDA68B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB91182B105C86F000EDA68B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		CB911870105C955000EDA68B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		CB9DBAF9105C508900EA2DF5 /* CGLGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLGeocoder.h; sourceTree = "<group>"; };
-		CB9DBAFA105C508900EA2DF5 /* CGLGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLGeocoder.m; sourceTree = "<group>"; };
 		CB9DBB02105C50A500EA2DF5 /* libCoreGeoLocationMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreGeoLocationMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9DBB0D105C514900EA2DF5 /* CGLGeoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLGeoManager.h; sourceTree = "<group>"; };
 		CB9DBB0E105C514900EA2DF5 /* CGLGeoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLGeoManager.m; sourceTree = "<group>"; };
@@ -230,8 +225,6 @@
 				CB911643105C59D400EDA68B /* CGLGeoDataProviderYahoo.m */,
 				CB91167F105C5EAD00EDA68B /* CGLURLRequestLoader.h */,
 				CB911680105C5EAD00EDA68B /* CGLURLRequestLoader.m */,
-				CB9DBAF9105C508900EA2DF5 /* CGLGeocoder.h */,
-				CB9DBAFA105C508900EA2DF5 /* CGLGeocoder.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -304,7 +297,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9DBAFB105C508900EA2DF5 /* CGLGeocoder.h in Headers */,
 				CB9DBB0F105C514900EA2DF5 /* CGLGeoManager.h in Headers */,
 				CB9DBB68105C540900EA2DF5 /* CGLGeoLocation.h in Headers */,
 				CB9115F2105C556000EDA68B /* CGLGeoRequest.h in Headers */,
@@ -434,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9DBAFC105C508900EA2DF5 /* CGLGeocoder.m in Sources */,
 				CB9DBB10105C514900EA2DF5 /* CGLGeoManager.m in Sources */,
 				CB9DBB69105C540900EA2DF5 /* CGLGeoLocation.m in Sources */,
 				CB9115F3105C556000EDA68B /* CGLGeoRequest.m in Sources */,
@@ -459,7 +450,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB9DBB05105C50B100EA2DF5 /* CGLGeocoder.m in Sources */,
 				CB9DBB12105C514900EA2DF5 /* CGLGeoManager.m in Sources */,
 				CB9DBB6B105C540900EA2DF5 /* CGLGeoLocation.m in Sources */,
 				CB9115F1105C556000EDA68B /* CGLGeoRequest.m in Sources */,

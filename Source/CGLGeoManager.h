@@ -3,7 +3,7 @@
 //  CoreGeoLocation
 //
 //  Created by Karl Adam on 09.09.12.
-//  Copyright 2009 Yahoo. All rights reserved.
+//  Copyright 2009 Karl Adam. BSD Licensed, check ReadMe.markdown for details
 //
 
 #import <Foundation/Foundation.h>
@@ -30,8 +30,6 @@
 - (void)determineGeographicalNameWithRequest:(CGLGeoRequest *)inRequest;
 - (CGLGeoRequest *)determineGeographicalNameForAddress:(NSString *)inAddress;
 - (CGLGeoRequest *)determineGeographicalNameForLocation:(CLLocation *)inLocation;
-
-//- (void)performLookupForRequest:a
 
 @end
 
