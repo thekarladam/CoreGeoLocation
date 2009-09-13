@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CoreGeoLocation' target in the 'CoreGeoLocation' project.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
