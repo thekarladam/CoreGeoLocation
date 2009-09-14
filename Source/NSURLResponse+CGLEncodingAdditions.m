@@ -3,7 +3,7 @@
 //  CoreGeoLocation
 //
 //  Created by Karl Adam on 09.09.12.
-//  Copyright 2009 Yahoo. All rights reserved.
+//  Copyright 2009 Karl Adam. BSD Licensed, check ReadMe.markdown for details
 //
 
 #import "NSURLResponse+CGLEncodingAdditions.h"

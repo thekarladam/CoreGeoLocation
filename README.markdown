@@ -7,13 +7,13 @@ UPDATES
 -------
 
 Code is hosted at GitHub: [http://github.com/thekarladam/coregeolocation](http://github.com/thekarladam/coregeolocation).
+Originally based on objc-geocoder [http://github.com/tylerhall/objc-geocoder](http://github.com/tylerhall/objc-geocoder)
 
 LICENSE
 -------
 
 The MIT License
 
-Copyright (c) 2009 Tyler Hall <tylerhall AT gmail DOT com>
 Copyright (c) 2009 Karl Adam <karladam AT mac DOT com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
