@@ -101,11 +101,11 @@
 					country = [NSString stringWithCString:(const char *)xmlNodeGetContent(currentNode) encoding:NSUTF8StringEncoding];
 				}				
 			}
-			
-			CLLocation *location = [[CLLocation alloc] initWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]];
-			geoLocation = [[[CGLGeoLocation alloc] initWithAddress:address city:city state:state zip:zip country:country andCoreLocation:location] autorelease];
-			[location release];
-			
+			if (latitude && longitude) {
+				CLLocation *location = [[CLLocation alloc] initWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]];
+				geoLocation = [[[CGLGeoLocation alloc] initWithAddress:address city:city state:state zip:zip country:country andCoreLocation:location] autorelease];
+				[location release];
+			}			
 		}
 		
 		xmlFreeDoc(locationXML);
