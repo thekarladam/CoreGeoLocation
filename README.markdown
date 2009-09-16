@@ -1,7 +1,7 @@
 CoreGeoLocation
 =========
 
-An Objective GeoCoder and Reverse Geocoder wrapping around [Yahoo's Geocoding services](http://developer.yahoo.com/maps/rest/V1/geocode.html) primarily.
+An Objective GeoCoder and Reverse Geocoder wrapping around [Yahoo's Geocoding services](http://developer.yahoo.com/maps/rest/V1/geocode.html) or [Google's Geo APIs](http://code.google.com/apis/maps/documentation/geocoding/index.html#GeocodingRequests) primarily.
 
 UPDATES
 -------
