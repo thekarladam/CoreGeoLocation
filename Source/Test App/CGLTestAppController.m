@@ -7,29 +7,38 @@
 //
 
 #import "CGLTestAppController.h"
+#import <CoreLocation/CoreLocation.h>
 #import <CoreGeoLocation/CoreGeoLocation.h>
 
-#define kApplicationID @""
+#define kYahooApplicationID @""
+#define kGoogleAPIKey @""
 
 @implementation CGLTestAppController
 
 @synthesize currentGeoRequest;
 
 - (void)awakeFromNib {
-	if (![kApplicationID length]) {
-		[NSException raise:@"You Need to provide an application ID for using Yahoo!'s Web Service" format:nil];
+	if ([kYahooApplicationID length]) {	
+		CGLGeoDataProviderYahoo *yahooDataProvider = [[CGLGeoDataProviderYahoo alloc] init];
+		[yahooDataProvider setApplicationID:kYahooApplicationID];
+		[[CGLGeoManager sharedManager] setDataProvider:yahooDataProvider];
+		[yahooDataProvider release];	
+		[[CGLGeoManager sharedManager] setDelegate:self];
+	} else if ([kGoogleAPIKey length]) {
+		CGLGeoDataProviderGoogle *googleDataProvider = [[CGLGeoDataProviderGoogle alloc] init];
+		[googleDataProvider setApiKey:kGoogleAPIKey];
+		[[CGLGeoManager sharedManager] setDataProvider:googleDataProvider];
+		[googleDataProvider	release];
+		[[CGLGeoManager sharedManager] setDelegate:self];
+	} else {
+		[NSException raise:@"Missing Y! AppID or Google API Key" format:@"You Need to provide either an Yahoo! application ID for Yahoo!'s GeoPlanet APIs or a Google API Key for using Google's Geo Web Services"];
 	}
-	
-	CGLGeoDataProviderYahoo *yahooDataProvider = [[CGLGeoDataProviderYahoo alloc] init];
-	[yahooDataProvider setApplicationID:kApplicationID];
-	[[CGLGeoManager sharedManager] setDataProvider:yahooDataProvider];
-	[yahooDataProvider release];
-	[[CGLGeoManager sharedManager] setDelegate:self];
 }
 
 - (IBAction)lookup:(id)sender {
 	NSString *locationAddress = [locationTextField stringValue];
-	
+	NSString *latitude = [latitudeTextField stringValue];
+	NSString *longitude = [longitudeTextField stringValue];
 
 	
 	if ([locationAddress length]) {
@@ -37,6 +46,10 @@
 		[progressIndicator startAnimation:self];
 		
 		CGLGeoRequest *geoRequest = [[CGLGeoManager sharedManager] determineGeographicalNameForAddress:locationAddress];		
+		self.currentGeoRequest = geoRequest;
+	} else if ([latitude length] && [longitude length]) {
+		CLLocation *location = [[[CLLocation alloc] initWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]] autorelease];
+		CGLGeoRequest *geoRequest = [[CGLGeoManager sharedManager] determineGeographicalNameForLocation:location];
 		self.currentGeoRequest = geoRequest;
 	}
 }

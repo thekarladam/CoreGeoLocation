@@ -19,6 +19,9 @@
 
 @property (nonatomic, readwrite, assign) id <CGLGeoDataProviderDelegate> delegate;
 
++ (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest;
+
+- (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest;
 - (void)performRequest:(CGLGeoRequest *)inRequest;
 
 @end

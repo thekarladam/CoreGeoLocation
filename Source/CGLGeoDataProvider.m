@@ -11,7 +11,15 @@
 
 @implementation CGLGeoDataProvider
 
++ (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest {
+	return NO;
+}
+
 @synthesize delegate = delegate_;
+
+- (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest {
+	return [[self class] canHandleRequest:inRequest];
+}
 
 - (void)performRequest:(CGLGeoRequest *)inRequest {
 	// you lose

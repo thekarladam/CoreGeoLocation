@@ -26,6 +26,16 @@
 
 @implementation CGLGeoDataProviderYahoo
 
++ (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest {
+	BOOL canHandleRequest = [super canHandleRequest:inRequest];
+	
+	if ([inRequest address]) {
+		canHandleRequest = YES;
+	}
+	
+	return canHandleRequest;
+}
+
 - (id)init {
 	if (self = [super init]) {
 		self.requestsMapping = [NSMutableDictionary dictionaryWithCapacity:15];
@@ -33,8 +43,28 @@
 	return self;
 }
 
+- (oneway void)dealloc {
+	self.applicationID = nil;
+	self.requestsMapping = nil;
+	
+	[super dealloc];
+}
+
 @synthesize applicationID = applicationID_;
 @synthesize requestsMapping = requestsMapping_;
+
+#pragma mark -
+
+- (BOOL)canHandleRequest:(CGLGeoRequest *)inRequest {
+	BOOL canHandleRequest = NO;
+	
+	
+	if ([self.applicationID length]) {
+		canHandleRequest = [super canHandleRequest:inRequest];
+	}
+	
+	return canHandleRequest;
+}
 
 - (void)performRequest:(CGLGeoRequest *)inRequest {
 	if ([inRequest address]) {

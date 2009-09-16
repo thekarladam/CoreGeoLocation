@@ -25,6 +25,15 @@
 /* Begin PBXBuildFile section */
 		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
 		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		CB0C2FB210606E35006725A8 /* CGLGeoDataProviderGoogle.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0C2FB010606E35006725A8 /* CGLGeoDataProviderGoogle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB0C2FB310606E35006725A8 /* CGLGeoDataProviderGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C2FB110606E35006725A8 /* CGLGeoDataProviderGoogle.m */; };
+		CB0C2FB410606E35006725A8 /* CGLGeoDataProviderGoogle.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0C2FB010606E35006725A8 /* CGLGeoDataProviderGoogle.h */; };
+		CB0C2FB510606E35006725A8 /* CGLGeoDataProviderGoogle.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C2FB110606E35006725A8 /* CGLGeoDataProviderGoogle.m */; };
+		CB0C3009106075DA006725A8 /* CGLXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0C3007106075DA006725A8 /* CGLXML.h */; };
+		CB0C300A106075DA006725A8 /* CGLXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C3008106075DA006725A8 /* CGLXML.m */; };
+		CB0C300B106075DA006725A8 /* CGLXML.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0C3007106075DA006725A8 /* CGLXML.h */; };
+		CB0C300C106075DA006725A8 /* CGLXML.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0C3008106075DA006725A8 /* CGLXML.m */; };
+		CB0C30661060825B006725A8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0C30651060825B006725A8 /* CoreLocation.framework */; };
 		CB9115F0105C556000EDA68B /* CGLGeoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9115EE105C556000EDA68B /* CGLGeoRequest.h */; };
 		CB9115F1105C556000EDA68B /* CGLGeoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9115EF105C556000EDA68B /* CGLGeoRequest.m */; };
 		CB9115F2105C556000EDA68B /* CGLGeoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9115EE105C556000EDA68B /* CGLGeoRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -106,6 +115,11 @@
 		32DBCF5E0370ADEE00C91783 /* CoreGeoLocation_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreGeoLocation_Prefix.pch; path = ../CoreGeoLocation_Prefix.pch; sourceTree = "<group>"; };
 		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC2EF5B0486A6940098B216 /* CoreGeoLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreGeoLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0C2FB010606E35006725A8 /* CGLGeoDataProviderGoogle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLGeoDataProviderGoogle.h; sourceTree = "<group>"; };
+		CB0C2FB110606E35006725A8 /* CGLGeoDataProviderGoogle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLGeoDataProviderGoogle.m; sourceTree = "<group>"; };
+		CB0C3007106075DA006725A8 /* CGLXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLXML.h; sourceTree = "<group>"; };
+		CB0C3008106075DA006725A8 /* CGLXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLXML.m; sourceTree = "<group>"; };
+		CB0C30651060825B006725A8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CB9115EE105C556000EDA68B /* CGLGeoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLGeoRequest.h; sourceTree = "<group>"; };
 		CB9115EF105C556000EDA68B /* CGLGeoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGLGeoRequest.m; sourceTree = "<group>"; };
 		CB91163C105C596700EDA68B /* CGLGeoDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGLGeoDataProvider.h; sourceTree = "<group>"; };
@@ -152,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB91170C105C6E0C00EDA68B /* CoreGeoLocation.framework in Frameworks */,
+				CB0C30661060825B006725A8 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +200,7 @@
 				CB9116DE105C6A9E00EDA68B /* Test App */,
 				034768DFFF38A50411DB9C8B /* Products */,
 				CB911870105C955000EDA68B /* libxml2.dylib */,
+				CB0C30651060825B006725A8 /* CoreLocation.framework */,
 			);
 			name = CoreGeoLocation;
 			sourceTree = "<group>";
@@ -213,6 +229,7 @@
 				CB911707105C6D7E00EDA68B /* CoreGeoLocation.h */,
 				32DBCF5E0370ADEE00C91783 /* CoreGeoLocation_Prefix.pch */,
 				CB911678105C5CC900EDA68B /* Additions */,
+				CB0C300D106075DF006725A8 /* Utilities */,
 				CB9DBB0D105C514900EA2DF5 /* CGLGeoManager.h */,
 				CB9DBB0E105C514900EA2DF5 /* CGLGeoManager.m */,
 				CB9115EE105C556000EDA68B /* CGLGeoRequest.h */,
@@ -223,6 +240,8 @@
 				CB91163D105C596700EDA68B /* CGLGeoDataProvider.m */,
 				CB911642105C59D400EDA68B /* CGLGeoDataProviderYahoo.h */,
 				CB911643105C59D400EDA68B /* CGLGeoDataProviderYahoo.m */,
+				CB0C2FB010606E35006725A8 /* CGLGeoDataProviderGoogle.h */,
+				CB0C2FB110606E35006725A8 /* CGLGeoDataProviderGoogle.m */,
 				CB91167F105C5EAD00EDA68B /* CGLURLRequestLoader.h */,
 				CB911680105C5EAD00EDA68B /* CGLURLRequestLoader.m */,
 			);
@@ -247,6 +266,15 @@
 				CB91182B105C86F000EDA68B /* libxml2.dylib */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CB0C300D106075DF006725A8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C3007106075DA006725A8 /* CGLXML.h */,
+				CB0C3008106075DA006725A8 /* CGLXML.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		CB911678105C5CC900EDA68B /* Additions */ = {
@@ -306,6 +334,8 @@
 				CB911683105C5EAD00EDA68B /* CGLURLRequestLoader.h in Headers */,
 				CB911699105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.h in Headers */,
 				CB911708105C6D7E00EDA68B /* CoreGeoLocation.h in Headers */,
+				CB0C2FB210606E35006725A8 /* CGLGeoDataProviderGoogle.h in Headers */,
+				CB0C3009106075DA006725A8 /* CGLXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +351,8 @@
 				CB91167B105C5CE600EDA68B /* NSString+CGLURLLoadingAdditions.h in Headers */,
 				CB911681105C5EAD00EDA68B /* CGLURLRequestLoader.h in Headers */,
 				CB911697105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.h in Headers */,
+				CB0C2FB410606E35006725A8 /* CGLGeoDataProviderGoogle.h in Headers */,
+				CB0C300B106075DA006725A8 /* CGLXML.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +466,8 @@
 				CB91167E105C5CE600EDA68B /* NSString+CGLURLLoadingAdditions.m in Sources */,
 				CB911684105C5EAD00EDA68B /* CGLURLRequestLoader.m in Sources */,
 				CB91169A105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.m in Sources */,
+				CB0C2FB310606E35006725A8 /* CGLGeoDataProviderGoogle.m in Sources */,
+				CB0C300A106075DA006725A8 /* CGLXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +492,8 @@
 				CB91167C105C5CE600EDA68B /* NSString+CGLURLLoadingAdditions.m in Sources */,
 				CB911682105C5EAD00EDA68B /* CGLURLRequestLoader.m in Sources */,
 				CB911698105C63D300EDA68B /* NSURLResponse+CGLEncodingAdditions.m in Sources */,
+				CB0C2FB510606E35006725A8 /* CGLGeoDataProviderGoogle.m in Sources */,
+				CB0C300C106075DA006725A8 /* CGLXML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

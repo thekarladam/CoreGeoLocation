@@ -32,6 +32,14 @@
 	return self;
 }
 
+- (id)initWithName:(NSString *)inName andCoreLocation:(CLLocation *)inLocation {
+	if (self = [super init]) {
+		self.name = inName;
+		self.coreLocation = inLocation;
+	}
+	return self;
+}
+
 - (oneway void)dealloc {
 	self.address = nil;
 	self.city = nil;
@@ -43,6 +51,7 @@
 	[super dealloc];
 }
 
+@synthesize name = name_;
 @synthesize address = address_;
 @synthesize city = city_;
 @synthesize state = state_;
@@ -53,7 +62,7 @@
 #pragma mark -
 
 - (NSString *)description {
-	return [NSString stringWithFormat:@"<%@:%p address: \"%@\" city: \"%@\" state: \"%@\" zip: %@ country: %@ location: %@>", NSStringFromClass([self class]), self, address_, city_, state_, zip_, country_, coreLocation_];
+	return [NSString stringWithFormat:@"<%@:%p name: \"%@\" address: \"%@\" city: \"%@\" state: \"%@\" zip: %@ country: %@ location: %@>", NSStringFromClass([self class]), self, name_, address_, city_, state_, zip_, country_, coreLocation_];
 }
 
 @end
